@@ -1,0 +1,10 @@
+E:\Users\Андрей\source\repos\sh\sh5\sh5\bin\Debug\sh5.exe.config
+E:\Users\Андрей\source\repos\sh\sh5\sh5\bin\Debug\sh5.exe
+E:\Users\Андрей\source\repos\sh\sh5\sh5\bin\Debug\sh5.pdb
+E:\Users\Андрей\source\repos\sh\sh5\sh5\obj\Debug\sh5.csproj.AssemblyReference.cache
+E:\Users\Андрей\source\repos\sh\sh5\sh5\obj\Debug\sh5.csproj.SuggestedBindingRedirects.cache
+E:\Users\Андрей\source\repos\sh\sh5\sh5\obj\Debug\sh5.Properties.Resources.resources
+E:\Users\Андрей\source\repos\sh\sh5\sh5\obj\Debug\sh5.csproj.GenerateResource.cache
+E:\Users\Андрей\source\repos\sh\sh5\sh5\obj\Debug\sh5.csproj.CoreCompileInputs.cache
+E:\Users\Андрей\source\repos\sh\sh5\sh5\obj\Debug\sh5.exe
+E:\Users\Андрей\source\repos\sh\sh5\sh5\obj\Debug\sh5.pdb
