@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{256CDDA3-EAE9-4D88-A909-31E191A3A876}</ProjectGuid>
+    <ProjectGuid>{FDE8BAEF-AE23-4B01-A92F-C66B3455F398}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>sh5</RootNamespace>
-    <AssemblyName>sh5</AssemblyName>
+    <RootNamespace>sh4</RootNamespace>
+    <AssemblyName>sh4</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,17 +46,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="cuadro\cuadro.cs" />
+    <Compile Include="forms\read.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\read.Designer.cs">
+      <DependentUpon>read.cs</DependentUpon>
+    </Compile>
+    <Compile Include="transport\car.cs" />
     <Compile Include="forms\main.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="forms\main.Designer.cs">
       <DependentUpon>main.cs</DependentUpon>
     </Compile>
-    <Compile Include="cuadro\meh.cs" />
-    <Compile Include="cuadro\oper.cs" />
+    <Compile Include="transport\militaryVehicle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="transport\bus.cs" />
+    <Compile Include="transport\transport.cs" />
+    <Compile Include="transport\truck.cs" />
+    <EmbeddedResource Include="forms\read.resx">
+      <DependentUpon>read.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\main.resx">
       <DependentUpon>main.cs</DependentUpon>
     </EmbeddedResource>
@@ -83,11 +94,5 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup />
-  <ItemGroup>
-    <Content Include="cuadro\images\rightMeh.png" />
-    <Content Include="cuadro\images\oper.png" />
-    <Content Include="cuadro\images\leftMeh.jpg" />
-    <Content Include="cuadro\images\cuadro.png" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

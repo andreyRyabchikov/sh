@@ -1,0 +1,12 @@
+F:\git\sh\sh\sh\sh4\obj\Debug\sh4.csproj.AssemblyReference.cache
+F:\git\sh\sh\sh\sh4\obj\Debug\sh4.csproj.SuggestedBindingRedirects.cache
+F:\git\sh\sh\sh\sh4\obj\Debug\sh4.Properties.Resources.resources
+F:\git\sh\sh\sh\sh4\obj\Debug\sh4.csproj.GenerateResource.cache
+F:\git\sh\sh\sh\sh4\obj\Debug\sh4.csproj.CoreCompileInputs.cache
+F:\git\sh\sh\sh\sh4\obj\Debug\sh4.main.resources
+F:\git\sh\sh\sh\sh4\bin\Debug\sh4.exe.config
+F:\git\sh\sh\sh\sh4\bin\Debug\sh4.exe
+F:\git\sh\sh\sh\sh4\bin\Debug\sh4.pdb
+F:\git\sh\sh\sh\sh4\obj\Debug\sh4.exe
+F:\git\sh\sh\sh\sh4\obj\Debug\sh4.pdb
+F:\git\sh\sh\sh\sh4\obj\Debug\sh4.read.resources
