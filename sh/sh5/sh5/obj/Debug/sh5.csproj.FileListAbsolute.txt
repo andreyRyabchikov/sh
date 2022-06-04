@@ -19,3 +19,4 @@ F:\git\sh\sh\sh\sh5\sh5\obj\Debug\sh5.csproj.GenerateResource.cache
 F:\git\sh\sh\sh\sh5\sh5\obj\Debug\sh5.csproj.CoreCompileInputs.cache
 F:\git\sh\sh\sh\sh5\sh5\obj\Debug\sh5.exe
 F:\git\sh\sh\sh\sh5\sh5\obj\Debug\sh5.pdb
+F:\git\sh\sh\sh\sh5\sh5\obj\Debug\sh5.read.resources

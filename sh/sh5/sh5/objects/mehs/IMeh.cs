@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace sh5
 {
-    internal class oper
+    interface IMeh
     {
+        int countRepear { get; set; }
     }
 }

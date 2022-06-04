@@ -28,51 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.добавитьКвадракоптерToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.удалитьКвадракоптерToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.вызватьоператораToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.добавитьМеханикаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.удалитьМеханикаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(910, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(205, 426);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.добавитьКвадракоптерToolStripMenuItem,
-            this.удалитьКвадракоптерToolStripMenuItem,
-            this.добавитьМеханикаToolStripMenuItem,
-            this.удалитьМеханикаToolStripMenuItem});
+            this.вызватьоператораToolStripMenuItem,
+            this.добавитьМеханикаToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1127, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
-            // добавитьКвадракоптерToolStripMenuItem
+            // вызватьоператораToolStripMenuItem
             // 
-            this.добавитьКвадракоптерToolStripMenuItem.Name = "добавитьКвадракоптерToolStripMenuItem";
-            this.добавитьКвадракоптерToolStripMenuItem.Size = new System.Drawing.Size(147, 20);
-            this.добавитьКвадракоптерToolStripMenuItem.Text = "добавить квадракоптер";
-            this.добавитьКвадракоптерToolStripMenuItem.Click += new System.EventHandler(this.добавитьКвадракоптерToolStripMenuItem_Click);
-            // 
-            // удалитьКвадракоптерToolStripMenuItem
-            // 
-            this.удалитьКвадракоптерToolStripMenuItem.Name = "удалитьКвадракоптерToolStripMenuItem";
-            this.удалитьКвадракоптерToolStripMenuItem.Size = new System.Drawing.Size(140, 20);
-            this.удалитьКвадракоптерToolStripMenuItem.Text = "удалить квадракоптер";
-            this.удалитьКвадракоптерToolStripMenuItem.Click += new System.EventHandler(this.удалитьКвадракоптерToolStripMenuItem_Click);
+            this.вызватьоператораToolStripMenuItem.Name = "вызватьоператораToolStripMenuItem";
+            this.вызватьоператораToolStripMenuItem.Size = new System.Drawing.Size(123, 20);
+            this.вызватьоператораToolStripMenuItem.Text = "вызвать оператора";
+            this.вызватьоператораToolStripMenuItem.Click += new System.EventHandler(this.вызватьОператораToolStripMenuItem_Click);
             // 
             // добавитьМеханикаToolStripMenuItem
             // 
@@ -81,40 +63,50 @@
             this.добавитьМеханикаToolStripMenuItem.Text = "добавить механика";
             this.добавитьМеханикаToolStripMenuItem.Click += new System.EventHandler(this.добавитьМеханикаToolStripMenuItem_Click);
             // 
-            // удалитьМеханикаToolStripMenuItem
+            // textBox1
             // 
-            this.удалитьМеханикаToolStripMenuItem.Name = "удалитьМеханикаToolStripMenuItem";
-            this.удалитьМеханикаToolStripMenuItem.Size = new System.Drawing.Size(118, 20);
-            this.удалитьМеханикаToolStripMenuItem.Text = "удалить механика";
-            this.удалитьМеханикаToolStripMenuItem.Click += new System.EventHandler(this.удалитьМеханикаToolStripMenuItem_Click);
+            this.textBox1.Location = new System.Drawing.Point(869, 27);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(246, 411);
+            this.textBox1.TabIndex = 3;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(12, 27);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(851, 411);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1127, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "main";
             this.Text = "Form1";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.main_FormClosed);
             this.Load += new System.EventHandler(this.main_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem добавитьКвадракоптерToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem удалитьКвадракоптерToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem вызватьоператораToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem добавитьМеханикаToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem удалитьМеханикаToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
