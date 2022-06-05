@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace sh5
 {
-    public class meh : MoveObj,IMeh
+    public abstract class meh : MoveObj,IMeh
     {
         private readonly List<cuadro> cuadros;
         private readonly object cuadroLocker;
 
         cuadro brokeCuadro;
+        protected int speedRepair;
+        protected string typeMeh;
         
         public meh(Action<string> messages, double startX, double startY, List<cuadro> cuadros, object cuadroLocker): base(messages, startX, startY)
         {
@@ -24,13 +26,13 @@ namespace sh5
         {
             if (endMove())
             {
-                messages("Механик " + name + " чинит квадракоптер номер " + brokeCuadro.name);
+                messages(typeMeh+" " + name + " чинит квадракоптер номер " + brokeCuadro.name);
                 countRepear++;
-                await Task.Delay(3000);
+                await Task.Delay(speedRepair);
                 brokeCuadro.broke = false;
                 brokeCuadro.isMove = true;
                 messages("Квадракоптер номер "+ brokeCuadro.name+ " починен");
-                messages("Механик " + name + " починил " + countRepear+" квадракоптер");
+                messages(typeMeh + " " + name + " починил " + countRepear+" квадракоптер");
                 task = null;
                 isMove = false;
                 moveX = startX;
@@ -51,7 +53,7 @@ namespace sh5
                     moveY = brokeCuadro.y-10;
                     isMove = true;
                     task = repair;
-                    messages("Механик " +name + " пошёл чинить квадракоптер номер " + brokeCuadro.name);
+                    messages(typeMeh + " " + name + " пошёл чинить квадракоптер номер " + brokeCuadro.name);
                 }
             }
         }

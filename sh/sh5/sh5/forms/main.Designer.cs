@@ -33,6 +33,9 @@
             this.добавитьМеханикаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.быстрыйToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.среднийToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.медленныйToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -58,10 +61,13 @@
             // 
             // добавитьМеханикаToolStripMenuItem
             // 
+            this.добавитьМеханикаToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.быстрыйToolStripMenuItem,
+            this.среднийToolStripMenuItem,
+            this.медленныйToolStripMenuItem});
             this.добавитьМеханикаToolStripMenuItem.Name = "добавитьМеханикаToolStripMenuItem";
             this.добавитьМеханикаToolStripMenuItem.Size = new System.Drawing.Size(125, 20);
             this.добавитьМеханикаToolStripMenuItem.Text = "добавить механика";
-            this.добавитьМеханикаToolStripMenuItem.Click += new System.EventHandler(this.добавитьМеханикаToolStripMenuItem_Click);
             // 
             // textBox1
             // 
@@ -79,6 +85,27 @@
             this.pictureBox1.Size = new System.Drawing.Size(851, 411);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
+            // 
+            // быстрыйToolStripMenuItem
+            // 
+            this.быстрыйToolStripMenuItem.Name = "быстрыйToolStripMenuItem";
+            this.быстрыйToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.быстрыйToolStripMenuItem.Text = "быстрый";
+            this.быстрыйToolStripMenuItem.Click += new System.EventHandler(this.быстрыйToolStripMenuItem_Click);
+            // 
+            // среднийToolStripMenuItem
+            // 
+            this.среднийToolStripMenuItem.Name = "среднийToolStripMenuItem";
+            this.среднийToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.среднийToolStripMenuItem.Text = "средний";
+            this.среднийToolStripMenuItem.Click += new System.EventHandler(this.среднийToolStripMenuItem_Click);
+            // 
+            // медленныйToolStripMenuItem
+            // 
+            this.медленныйToolStripMenuItem.Name = "медленныйToolStripMenuItem";
+            this.медленныйToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.медленныйToolStripMenuItem.Text = "медленный";
+            this.медленныйToolStripMenuItem.Click += new System.EventHandler(this.медленныйToolStripMenuItem_Click);
             // 
             // main
             // 
@@ -107,6 +134,9 @@
         private System.Windows.Forms.ToolStripMenuItem добавитьМеханикаToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ToolStripMenuItem быстрыйToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem среднийToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem медленныйToolStripMenuItem;
     }
 }
 

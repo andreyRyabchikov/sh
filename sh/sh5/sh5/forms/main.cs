@@ -97,17 +97,7 @@ namespace sh5
         private void добавитьМеханикаToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            meh meh = Activator.CreateInstance(typeof(meh),new object[] { (Action<string>)message, 740+countMehs*10, 340, cuadros, cuadrosLocker }) as meh;
-            countMehs++;
-            meh.name = input("Введите имя механика");
-
-            lock (viewModelsLocker)
-            {
-                viewModels.Add(new model(meh, Properties.Resources.meh));
-            }
-            if(countMehs>maxMehs)
-                добавитьМеханикаToolStripMenuItem.Enabled = false;
-            Task.Run(meh.start);
+           
         }
 
         string input(string message)
@@ -137,6 +127,38 @@ namespace sh5
                     viewModel.Model.isWork = true;
             }
         }
+        private void newMeh(meh meh)
+        {
+            countMehs++;
+            meh.name = input("Введите имя механика");
 
+            lock (viewModelsLocker)
+            {
+                viewModels.Add(new model(meh, Properties.Resources.meh));
+            }
+            if (countMehs > maxMehs)
+                добавитьМеханикаToolStripMenuItem.Enabled = false;
+            Task.Run(meh.start);
+        }
+        private void быстрыйToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fastMeh meh = Activator.CreateInstance(typeof(fastMeh), new object[] 
+            { (Action<string>)message, 740 + countMehs * 10, 340, cuadros, cuadrosLocker }) as fastMeh;
+            newMeh(meh); 
+        }
+
+        private void среднийToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mediumMeh meh = Activator.CreateInstance(typeof(mediumMeh), new object[] 
+            { (Action<string>)message, 740 + countMehs * 10, 340, cuadros, cuadrosLocker }) as mediumMeh;
+            newMeh(meh);
+        }
+
+        private void медленныйToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            slowMeh meh = Activator.CreateInstance(typeof(slowMeh), new object[] 
+            { (Action<string>)message, 740 + countMehs * 10, 340, cuadros, cuadrosLocker }) as slowMeh;
+            newMeh(meh);
+        }
     }
 }

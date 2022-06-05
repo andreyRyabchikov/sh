@@ -62,8 +62,11 @@
     <Compile Include="forms\main.Designer.cs">
       <DependentUpon>main.cs</DependentUpon>
     </Compile>
+    <Compile Include="objects\mehs\fastMeh.cs" />
     <Compile Include="objects\mehs\IMeh.cs" />
+    <Compile Include="objects\mehs\mediumMeh.cs" />
     <Compile Include="objects\mehs\meh.cs" />
+    <Compile Include="objects\mehs\slowMeh.cs" />
     <Compile Include="objects\moveObj.cs" />
     <Compile Include="objects\obj.cs" />
     <Compile Include="objects\oper.cs" />

@@ -28,7 +28,7 @@ namespace sh5
         {
             return Math.Abs(x - moveX) < 5 && Math.Abs(y - moveY) < 5;
         }
-        const int speed = 2;
+        const int speed = 5;
         public void move()
         {
             if (endMove())
@@ -36,13 +36,13 @@ namespace sh5
 
             if (Math.Abs(x - moveX)  > 2)
             {
-                y += (speed * (moveY - y) / Math.Abs(x - moveX)) % 5;
-                x += (speed * Math.Sign(moveX - x)) % 5;
+                y += (3*(moveY - y) / Math.Abs(x - moveX)) % speed;
+                x += (3 * Math.Sign(moveX - x)) % speed;
             }
             else
             {
-                x += (speed * (moveX - x) / Math.Abs(y - moveY))%5;
-                y += (speed * Math.Sign(moveY - y)) % 5;
+                x += (3 * (moveX - x) / Math.Abs(y - moveY))% speed;
+                y += (3 * Math.Sign(moveY - y)) % speed;
             }
         }
 
