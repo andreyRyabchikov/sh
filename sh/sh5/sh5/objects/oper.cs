@@ -8,33 +8,33 @@ using System.Threading.Tasks;
 namespace sh5
 {
 
-    public class oper : obj
+    public class Oper : Obj
     {
-        public cuadro cuadro;
+        public Quadrocopter quadrocopter;
 
 
-        public oper(Action<string> messages,double x, double y): base(messages)
+        public Oper(Action<string> messages,double x, double y): base(messages)
         {
-            base.x = x;
-            base.y = y;
-            cuadro = null;
+            base.X = x;
+            base.Y = y;
+            quadrocopter = null;
         }
 
-        async Task flightСontrol()
+        async Task FlightСontrol()
         {
-            messages("Взлетает квадракоптер номер "+ cuadro.name);
-            await cuadro.fly();
+            messages("Взлетает квадракоптер номер "+ quadrocopter.Name);
+            await quadrocopter.Fly();
         }
 
        
 
-        public override async void start()
+        public override async void Start()
         {
-            while (!isWork)
+            while (!IsWork)
             {
-                messages("Начало полета квадракоптера номер "+ cuadro.name);
+                messages("Начало полета квадракоптера номер "+ quadrocopter.Name);
                 await Task.Delay(3000);
-                await flightСontrol();
+                await FlightСontrol();
                 await Task.Delay(6000);
             }
         }

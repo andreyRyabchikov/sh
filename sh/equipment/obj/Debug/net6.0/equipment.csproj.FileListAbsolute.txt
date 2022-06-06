@@ -1,0 +1,12 @@
+F:\git\sh\sh\sh\equipment\obj\Debug\net6.0\equipment.csproj.AssemblyReference.cache
+F:\git\sh\sh\sh\equipment\obj\Debug\net6.0\equipment.GeneratedMSBuildEditorConfig.editorconfig
+F:\git\sh\sh\sh\equipment\obj\Debug\net6.0\equipment.AssemblyInfoInputs.cache
+F:\git\sh\sh\sh\equipment\obj\Debug\net6.0\equipment.AssemblyInfo.cs
+F:\git\sh\sh\sh\equipment\obj\Debug\net6.0\equipment.csproj.CoreCompileInputs.cache
+F:\git\sh\sh\sh\equipment\bin\Debug\net6.0\equipment.deps.json
+F:\git\sh\sh\sh\equipment\bin\Debug\net6.0\equipment.dll
+F:\git\sh\sh\sh\equipment\bin\Debug\net6.0\equipment.pdb
+F:\git\sh\sh\sh\equipment\obj\Debug\net6.0\equipment.dll
+F:\git\sh\sh\sh\equipment\obj\Debug\net6.0\refint\equipment.dll
+F:\git\sh\sh\sh\equipment\obj\Debug\net6.0\equipment.pdb
+F:\git\sh\sh\sh\equipment\obj\Debug\net6.0\ref\equipment.dll

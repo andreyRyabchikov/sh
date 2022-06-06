@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace sh5
 {
-    public class mediumMeh : meh
+    public class MediumMeh : Meh
     {
-        public mediumMeh(Action<string> messages, double startX, double startY, List<cuadro> cuadros, object cuadroLocker)
-            : base(messages, startX, startY, cuadros, cuadroLocker)
+        public MediumMeh(Action<string> messages, double startX, double startY, List<Quadrocopter> quadrocopters, object quadrocopterLocker)
+            : base(messages, startX, startY, quadrocopters, quadrocopterLocker)
         {
             speedRepair = 3000;
             typeMeh = "Средний механик";

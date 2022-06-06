@@ -8,15 +8,15 @@ using System.Windows.Forms;
 
 namespace sh5
 {
-    class makeObj
+    class MakeObj
     {
         Bitmap bitmap;
         private Graphics graphics;
         Timer timer;
 
-        public makeObj(PictureBox pictureBox, Image backgroundImage, Font textFont,
-                        List<storageCoord> viewObjects, object viewObjectsLocker,
-                        List<model> viewModels, object viewModelsLocker)
+        public MakeObj(PictureBox pictureBox, Image backgroundImage, Font textFont,
+                        List<StorageCoord> viewObjects, object viewObjectsLocker,
+                        List<Model> viewModels, object viewModelsLocker)
         {
             bitmap = new Bitmap(pictureBox.Width, pictureBox.Height);
             graphics = Graphics.FromImage(bitmap);
@@ -48,7 +48,7 @@ namespace sh5
             });
         }
 
-        void Draw(storageCoord viewObject)
+        void Draw(StorageCoord viewObject)
         {
             graphics.DrawImage(viewObject.image,
                 (float)viewObject.X - viewObject.image.Width / 2, (float)viewObject.Y - viewObject.image.Height / 2);

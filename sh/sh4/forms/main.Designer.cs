@@ -160,7 +160,7 @@ namespace sh4
             this.Controls.Add(this.CreateObjButton);
             this.Name = "main";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.mainLoad);
+            this.Load += new System.EventHandler(this.MainLoad);
             this.ResumeLayout(false);
             this.PerformLayout();
 

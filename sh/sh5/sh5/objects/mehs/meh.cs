@@ -6,54 +6,54 @@ using System.Threading.Tasks;
 
 namespace sh5
 {
-    public abstract class meh : MoveObj,IMeh
+    public abstract class Meh : MoveObj,IMeh
     {
-        private readonly List<cuadro> cuadros;
-        private readonly object cuadroLocker;
+        private readonly List<Quadrocopter> quadrocopters;
+        private readonly object quadrocopterLocker;
 
-        cuadro brokeCuadro;
+        Quadrocopter brokeQuadrocopter;
         protected int speedRepair;
         protected string typeMeh;
         
-        public meh(Action<string> messages, double startX, double startY, List<cuadro> cuadros, object cuadroLocker): base(messages, startX, startY)
+        public Meh(Action<string> messages, double startX, double startY, List<Quadrocopter> Quadrocopters, object QuadrocopterLocker): base(messages, startX, startY)
         {
-            countRepear = 0;
-            this.cuadros = cuadros;
-            this.cuadroLocker = cuadroLocker;
+            CountRepear = 0;
+            this.quadrocopters = Quadrocopters;
+            this.quadrocopterLocker = QuadrocopterLocker;
         }
-        public int countRepear { get; set; }
-        async Task repair()
+        public int CountRepear { get; set; }
+        async Task Repair()
         {
-            if (endMove())
+            if (EndMove())
             {
-                messages(typeMeh+" " + name + " чинит квадракоптер номер " + brokeCuadro.name);
-                countRepear++;
+                messages(typeMeh+" " + Name + " чинит квадракоптер номер " + brokeQuadrocopter.Name);
+                CountRepear++;
                 await Task.Delay(speedRepair);
-                brokeCuadro.broke = false;
-                brokeCuadro.isMove = true;
-                messages("Квадракоптер номер "+ brokeCuadro.name+ " починен");
-                messages(typeMeh + " " + name + " починил " + countRepear+" квадракоптер");
+                brokeQuadrocopter.broke = false;
+                brokeQuadrocopter.IsMove = true;
+                messages("Квадракоптер номер "+ brokeQuadrocopter.Name+ " починен");
+                messages(typeMeh + " " + Name + " починил " + CountRepear+" квадракоптер");
                 task = null;
-                isMove = false;
-                moveX = startX;
-                moveY = startY;
+                IsMove = false;
+                MoveX = startX;
+                MoveY = startY;
             }
         }
-        protected override void checkEvents()
+        protected override void CheckEvents()
         {
-            if (isMove)
+            if (IsMove)
                 return;
-            lock (cuadroLocker)
+            lock (quadrocopterLocker)
             {
-                brokeCuadro = cuadros.FirstOrDefault(cuadro => cuadro.broke&& !cuadro.waitingForTheMech);
-                if (brokeCuadro != null)
+                brokeQuadrocopter = quadrocopters.FirstOrDefault(Quadrocopter => Quadrocopter.broke&& !Quadrocopter.WaitingForTheMech);
+                if (brokeQuadrocopter != null)
                 {
-                    brokeCuadro.waitingForTheMech = true;
-                    moveX = brokeCuadro.x;
-                    moveY = brokeCuadro.y-10;
-                    isMove = true;
-                    task = repair;
-                    messages(typeMeh + " " + name + " пошёл чинить квадракоптер номер " + brokeCuadro.name);
+                    brokeQuadrocopter.WaitingForTheMech = true;
+                    MoveX = brokeQuadrocopter.X;
+                    MoveY = brokeQuadrocopter.Y-10;
+                    IsMove = true;
+                    task = Repair;
+                    messages(typeMeh + " " + Name + " пошёл чинить квадракоптер номер " + brokeQuadrocopter.Name);
                 }
             }
         }

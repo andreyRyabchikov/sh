@@ -1,0 +1,2 @@
+F:\git\sh\sh\sh\sh1\obj\Debug\sh1.exe
+F:\git\sh\sh\sh\sh1\obj\Debug\sh1.pdb

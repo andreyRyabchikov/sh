@@ -1,7 +1,7 @@
 ﻿
 namespace sh4
 {
-    partial class read
+    partial class Read
     {
         /// <summary>
         /// Required designer variable.
@@ -51,7 +51,7 @@ namespace sh4
             this.button1.TabIndex = 1;
             this.button1.Text = "Ввести";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // textBox2
             // 
@@ -70,7 +70,7 @@ namespace sh4
             this.Controls.Add(this.label1);
             this.Name = "read";
             this.Text = "add_truck";
-            this.Load += new System.EventHandler(this.add_truck_Load);
+            this.Load += new System.EventHandler(this.Read_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -33,3 +33,15 @@ E:\Users\Андрей\source\repos\sh\sh1\obj\Debug\sh1.csproj.GenerateResource.
 E:\Users\Андрей\source\repos\sh\sh1\obj\Debug\sh1.csproj.CoreCompileInputs.cache
 E:\Users\Андрей\source\repos\sh\sh1\obj\Debug\sh1.exe
 E:\Users\Андрей\source\repos\sh\sh1\obj\Debug\sh1.pdb
+F:\git\sh\sh\sh\sh1\bin\Debug\sh1.exe.config
+F:\git\sh\sh\sh\sh1\bin\Debug\sh1.exe
+F:\git\sh\sh\sh\sh1\bin\Debug\sh1.pdb
+F:\git\sh\sh\sh\sh1\obj\Debug\sh1.csproj.AssemblyReference.cache
+F:\git\sh\sh\sh\sh1\obj\Debug\sh1.csproj.SuggestedBindingRedirects.cache
+F:\git\sh\sh\sh\sh1\obj\Debug\sh1.main.resources
+F:\git\sh\sh\sh\sh1\obj\Debug\sh1.input.resources
+F:\git\sh\sh\sh\sh1\obj\Debug\sh1.Properties.Resources.resources
+F:\git\sh\sh\sh\sh1\obj\Debug\sh1.csproj.GenerateResource.cache
+F:\git\sh\sh\sh\sh1\obj\Debug\sh1.csproj.CoreCompileInputs.cache
+F:\git\sh\sh\sh\sh1\obj\Debug\sh1.exe
+F:\git\sh\sh\sh\sh1\obj\Debug\sh1.pdb

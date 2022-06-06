@@ -7,29 +7,29 @@ using System.Windows.Forms;
 
 namespace sh4
 {
-    public class bus : car
+    public class Bus : Car
     {
-        public int countTrips { get; set; }
-        public int busNumber { get; set; }
+        public int CountTrips { get; set; }
+        public int BusNumber { get; set; }
 
-        public bus(int busNumber)
+        public Bus(int busNumber)
         {
-            this.busNumber = busNumber;
-            countTrips = 0;
+            this.BusNumber = busNumber;
+            CountTrips = 0;
         }
-        public bus()
+        public Bus()
         {
-            this.busNumber = 65;
-            countTrips = 0;
+            this.BusNumber = 65;
+            CountTrips = 0;
         }
-        public void goToTrip()
+        public void GoToTrip()
         {
-            countTrips++;
+            CountTrips++;
         }
-        public void changeBusNumber(int busNumber)
+        public void ChangeBusNumber(int busNumber)
         {
             if (busNumber > 0)
-                this.busNumber = busNumber;
+                this.BusNumber = busNumber;
             else
                 MessageBox.Show("Номер автобуса должен быть положителен");
         }

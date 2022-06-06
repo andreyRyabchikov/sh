@@ -1,0 +1,6 @@
+F:\git\sh\sh\sh\transport+\bin\Debug\transport2.dll
+F:\git\sh\sh\sh\transport+\bin\Debug\transport2.pdb
+F:\git\sh\sh\sh\transport+\obj\Debug\transport2.csproj.AssemblyReference.cache
+F:\git\sh\sh\sh\transport+\obj\Debug\transport2.csproj.CoreCompileInputs.cache
+F:\git\sh\sh\sh\transport+\obj\Debug\transport2.dll
+F:\git\sh\sh\sh\transport+\obj\Debug\transport2.pdb

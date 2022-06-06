@@ -27,28 +27,28 @@ namespace sh4
             InitializeComponent();
         }
 
-        private void mainLoad(object sender, EventArgs e)
+        private void MainLoad(object sender, EventArgs e)
         {
             Models = Assembly.Load("sh4");
             types = Models.GetTypes().Where(type => type.GetInterface("transportVehicle") != null && !type.IsAbstract);
             ObjComboBox.Items.AddRange(types.Select(type => type.Name).ToArray());
         }
-        void fillMethodsComboBox()
+        void FillMethodsComboBox()
         {
             MethodsComboBox.Items.Clear();
             IEnumerable<string> objectMethods = (new object()).GetType().GetMethods().Select(method => method.Name);
             MethodsComboBox.Items.AddRange(type.GetMethods().Where(method => !objectMethods.Contains(method.Name) &&method.Name.Substring(0, 4) != "get_" &&method.Name.Substring(0, 4) != "set_").Select(method => method.Name).ToArray());
         }
-        object inputIntNumber(string message)
+        object InputIntNumber(string message)
         {
-            read nf = new read(message);
+            Read nf = new Read(message);
             nf.ShowDialog();
             this.Enabled = true;
 
             return Int32.Parse(nf.number);
         }
 
-        object inputObject(Type type)
+        object InputObject(Type type)
         {
             MessageBox.Show($"input {type.Name} object");
 
@@ -56,13 +56,13 @@ namespace sh4
 
             foreach (var item in type.GetProperties())
             {
-                    item.SetValue(newObject, inputIntNumber("input " + item.Name));
+                    item.SetValue(newObject, InputIntNumber("input " + item.Name));
             }
 
             return newObject;
         }
 
-        void showObjectFields()
+        void ShowObjectFields()
         {
             objectFieldsListBox.Items.Clear();
 
@@ -77,7 +77,7 @@ namespace sh4
         {
             type = types.First(type => type.Name == ObjComboBox.SelectedItem.ToString());
             Object = null;
-            fillMethodsComboBox();
+            FillMethodsComboBox();
             CreateObjButton.Enabled = true;
             ObjComboBox.Enabled = true;
             InputFieldsButton.Enabled = false;
@@ -106,10 +106,10 @@ namespace sh4
 
         private void CreateObjButton_Click(object sender, EventArgs e)
         {
-            Object = inputObject(type);
+            Object = InputObject(type);
             if (method?.GetParameters().Length == 0)
                 RunMethodButton.Enabled = true;
-            showObjectFields();
+            ShowObjectFields();
         }
 
         private void RunMethodButton_Click(object sender, EventArgs e)
@@ -121,15 +121,15 @@ namespace sh4
             }
             else
                 MessageBox.Show(method.Invoke(Object, methodParameters).ToString());
-            showObjectFields();
+            ShowObjectFields();
         }
 
         private void InputFieldsButton_Click(object sender, EventArgs e)
         {
             if (method.GetParameters()[0].ParameterType.Name == "IFurniture")
-                methodParameters = new object[1] { inputObject(type) };
+                methodParameters = new object[1] { InputObject(type) };
             else if (method.GetParameters().Length != 0)
-                methodParameters = method.GetParameters().Select(param => inputIntNumber("input" + param.Name)).ToArray();
+                methodParameters = method.GetParameters().Select(param => InputIntNumber("input" + param.Name)).ToArray();
             if (Object != null)
                 RunMethodButton.Enabled = true;
         }

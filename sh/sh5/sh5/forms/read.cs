@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace sh5
 {
 
-    public partial class read : Form
+    public partial class Read : Form
     {
         private const int CP_NOCLOSE_BUTTON = 0x200;
         protected override CreateParams CreateParams
@@ -24,7 +24,7 @@ namespace sh5
             }
         }
         public string tmp;
-        public read(string message)
+        public Read(string message)
         {
             InitializeComponent();
             label1.Text = message;

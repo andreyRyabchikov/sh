@@ -1,0 +1,15 @@
+F:\git\sh\sh\sh\sh3Forms\bin\Debug\sh3Forms.exe.config
+F:\git\sh\sh\sh\sh3Forms\bin\Debug\sh3Forms.exe
+F:\git\sh\sh\sh\sh3Forms\bin\Debug\sh3Forms.pdb
+F:\git\sh\sh\sh\sh3Forms\bin\Debug\transport.dll
+F:\git\sh\sh\sh\sh3Forms\bin\Debug\transport.pdb
+F:\git\sh\sh\sh\sh3Forms\obj\Debug\sh3Forms.csproj.AssemblyReference.cache
+F:\git\sh\sh\sh\sh3Forms\obj\Debug\sh3Forms.csproj.SuggestedBindingRedirects.cache
+F:\git\sh\sh\sh\sh3Forms\obj\Debug\sh3Forms.addTruck.resources
+F:\git\sh\sh\sh\sh3Forms\obj\Debug\sh3Forms.main.resources
+F:\git\sh\sh\sh\sh3Forms\obj\Debug\sh3Forms.Properties.Resources.resources
+F:\git\sh\sh\sh\sh3Forms\obj\Debug\sh3Forms.csproj.GenerateResource.cache
+F:\git\sh\sh\sh\sh3Forms\obj\Debug\sh3Forms.csproj.CoreCompileInputs.cache
+F:\git\sh\sh\sh\sh3Forms\obj\Debug\sh3Forms.csproj.CopyComplete
+F:\git\sh\sh\sh\sh3Forms\obj\Debug\sh3Forms.exe
+F:\git\sh\sh\sh\sh3Forms\obj\Debug\sh3Forms.pdb

@@ -8,16 +8,16 @@ using System.Drawing;
 
 namespace sh5
 {
-    class model : storageCoord
+    class Model : StorageCoord
     {
-        public obj Model { get; }
+        public Obj Element { get; }
 
-        public override double X { get => Model.x; }
-        public override double Y { get => Model.y; }
+        public override double X { get => Element.X; }
+        public override double Y { get => Element.Y; }
 
-        public model(obj model, Image image): base(image)
+        public Model(Obj model, Image image): base(image)
         {
-           Model = model;
+           Element = model;
         }
     }
 }

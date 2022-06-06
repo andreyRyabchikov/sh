@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace sh5
 {
-    public abstract class obj
+    public abstract class Obj
     {
-        public double x { get; set; }
-        public double y { get; set; }
+        public double X { get; set; }
+        public double Y { get; set; }
 
-        public bool isMove { get; set; }
+        public bool IsMove { get; set; }
 
-        public bool isWork { get; set; }
-        public abstract void start();
+        public bool IsWork { get; set; }
+        public abstract void Start();
 
         public Action<string> messages;
 
-        public obj(Action<string> messages)
+        public Obj(Action<string> messages)
         {
             this.messages = messages;
         }

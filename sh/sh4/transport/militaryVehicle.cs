@@ -6,30 +6,30 @@ using System.Threading.Tasks;
 
 namespace sh4
 {
-    public class militaryVehicle : car
+    public class MilitaryVehicle : Car
     {
-        public int countBullets { get; set; }
-        public int countMachinegun { get; set; }
+        public int CountBullets { get; set; }
+        public int CountMachinegun { get; set; }
 
-        public militaryVehicle(int countMachinegun)
+        public MilitaryVehicle(int countMachinegun)
         {
-            this.countMachinegun = countMachinegun;
-            countBullets = 0;
+            this.CountMachinegun = countMachinegun;
+            CountBullets = 0;
         }
-        public militaryVehicle()
+        public MilitaryVehicle()
         {
-            this.countMachinegun = 2;
-            countBullets = 0;
+            this.CountMachinegun = 2;
+            CountBullets = 0;
         }
-        public void loadBullets(int bullets)
+        public void LoadBullets(int bullets)
         {
-            countBullets += bullets;
+            CountBullets += bullets;
         }
-        public void shoot()
+        public void Shoot()
         {
-            while (countBullets > 0)
-                countBullets -= countMachinegun;
-            countBullets = 0;
+            while (CountBullets > 0)
+                CountBullets -= CountMachinegun;
+            CountBullets = 0;
         }
     }
 }

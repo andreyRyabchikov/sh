@@ -1,6 +1,6 @@
 ﻿namespace sh5
 {
-    partial class main
+    partial class Main
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -31,11 +31,11 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.вызватьоператораToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.добавитьМеханикаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.быстрыйToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.среднийToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.медленныйToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -57,7 +57,7 @@
             this.вызватьоператораToolStripMenuItem.Name = "вызватьоператораToolStripMenuItem";
             this.вызватьоператораToolStripMenuItem.Size = new System.Drawing.Size(123, 20);
             this.вызватьоператораToolStripMenuItem.Text = "вызвать оператора";
-            this.вызватьоператораToolStripMenuItem.Click += new System.EventHandler(this.вызватьОператораToolStripMenuItem_Click);
+            this.вызватьоператораToolStripMenuItem.Click += new System.EventHandler(this.ВызватьОператораToolStripMenuItem_Click);
             // 
             // добавитьМеханикаToolStripMenuItem
             // 
@@ -68,6 +68,27 @@
             this.добавитьМеханикаToolStripMenuItem.Name = "добавитьМеханикаToolStripMenuItem";
             this.добавитьМеханикаToolStripMenuItem.Size = new System.Drawing.Size(125, 20);
             this.добавитьМеханикаToolStripMenuItem.Text = "добавить механика";
+            // 
+            // быстрыйToolStripMenuItem
+            // 
+            this.быстрыйToolStripMenuItem.Name = "быстрыйToolStripMenuItem";
+            this.быстрыйToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.быстрыйToolStripMenuItem.Text = "быстрый";
+            this.быстрыйToolStripMenuItem.Click += new System.EventHandler(this.БыстрыйToolStripMenuItem_Click);
+            // 
+            // среднийToolStripMenuItem
+            // 
+            this.среднийToolStripMenuItem.Name = "среднийToolStripMenuItem";
+            this.среднийToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.среднийToolStripMenuItem.Text = "средний";
+            this.среднийToolStripMenuItem.Click += new System.EventHandler(this.СреднийToolStripMenuItem_Click);
+            // 
+            // медленныйToolStripMenuItem
+            // 
+            this.медленныйToolStripMenuItem.Name = "медленныйToolStripMenuItem";
+            this.медленныйToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.медленныйToolStripMenuItem.Text = "медленный";
+            this.медленныйToolStripMenuItem.Click += new System.EventHandler(this.МедленныйToolStripMenuItem_Click);
             // 
             // textBox1
             // 
@@ -85,29 +106,9 @@
             this.pictureBox1.Size = new System.Drawing.Size(851, 411);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // быстрыйToolStripMenuItem
-            // 
-            this.быстрыйToolStripMenuItem.Name = "быстрыйToolStripMenuItem";
-            this.быстрыйToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.быстрыйToolStripMenuItem.Text = "быстрый";
-            this.быстрыйToolStripMenuItem.Click += new System.EventHandler(this.быстрыйToolStripMenuItem_Click);
-            // 
-            // среднийToolStripMenuItem
-            // 
-            this.среднийToolStripMenuItem.Name = "среднийToolStripMenuItem";
-            this.среднийToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.среднийToolStripMenuItem.Text = "средний";
-            this.среднийToolStripMenuItem.Click += new System.EventHandler(this.среднийToolStripMenuItem_Click);
-            // 
-            // медленныйToolStripMenuItem
-            // 
-            this.медленныйToolStripMenuItem.Name = "медленныйToolStripMenuItem";
-            this.медленныйToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.медленныйToolStripMenuItem.Text = "медленный";
-            this.медленныйToolStripMenuItem.Click += new System.EventHandler(this.медленныйToolStripMenuItem_Click);
-            // 
-            // main
+            // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -116,10 +117,10 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "main";
+            this.Name = "Main";
             this.Text = "Form1";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.main_FormClosed);
-            this.Load += new System.EventHandler(this.main_Load);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Main_FormClosed);
+            this.Load += new System.EventHandler(this.Main_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

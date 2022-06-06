@@ -1,0 +1,6 @@
+F:\git\sh\sh\sh\Models\bin\Debug\Models.dll
+F:\git\sh\sh\sh\Models\bin\Debug\Models.pdb
+F:\git\sh\sh\sh\Models\obj\Debug\Models.csproj.AssemblyReference.cache
+F:\git\sh\sh\sh\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+F:\git\sh\sh\sh\Models\obj\Debug\Models.dll
+F:\git\sh\sh\sh\Models\obj\Debug\Models.pdb

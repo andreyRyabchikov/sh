@@ -7,41 +7,41 @@ using System.Windows.Forms;
 
 namespace sh4
 {
-    public abstract class car : transportVehicle
+    public abstract class Car : ITransportVehicle
     {
-        public int mileage { get; set; }
-        public int passenger { get; set; }
-        public int maxPassenger { get; set; }
-        public int fuel { get; set; }
-        public car()
+        public int Mileage { get; set; }
+        public int Passenger { get; set; }
+        public int MaxPassenger { get; set; }
+        public int Fuel { get; set; }
+        public Car()
         {
-            passenger = 0;
-            maxPassenger = 4;
-            mileage = 0;
-            fuel = 0;
+            Passenger = 0;
+            MaxPassenger = 4;
+            Mileage = 0;
+            Fuel = 0;
         }
-        public void move(int km)
+        public void Move(int km)
         {
-            if (fuel - km > 0)
+            if (Fuel - km > 0)
             {
-                mileage += km;
-                fuel -= km;
+                Mileage += km;
+                Fuel -= km;
             }
             else
                 MessageBox.Show("Не хватает топлива!");
         }
-        public void loadPassengers(int passengers)
+        public void LoadPassengers(int passengers)
         {
-            if (passenger + passengers > maxPassenger)
+            if (Passenger + passengers > MaxPassenger)
             {
                 MessageBox.Show("Не удалось посадить пассажиров!");
             }
             else
-                passenger += passengers;
+                Passenger += passengers;
         }
-        public void refuel(int litre)
+        public void Refuel(int litre)
         {
-            fuel += litre;
+            Fuel += litre;
         }
     }
 }

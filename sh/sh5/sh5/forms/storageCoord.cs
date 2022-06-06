@@ -7,19 +7,19 @@ using System.Drawing;
 
 namespace sh5
 {
-    class storageCoord
+    class StorageCoord
     {
         public virtual double X { get; set; }
         public virtual double Y { get; set; }
 
         public Image image { get; set; }
 
-        public storageCoord(Image image)
+        public StorageCoord(Image image)
         {
             this.image = image;
         }
 
-        public storageCoord(Image image, double x, double y)
+        public StorageCoord(Image image, double x, double y)
         {
             this.image = image;
             X = x;

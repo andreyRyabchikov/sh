@@ -6,52 +6,52 @@ using System.Threading.Tasks;
 
 namespace sh5
 {
-    public abstract class MoveObj : obj
+    public abstract class MoveObj : Obj
     {
         protected double startX, startY;
-        public double moveX { get; set; }
-        public double moveY { get; set; }
+        public double MoveX { get; set; }
+        public double MoveY { get; set; }
         public MoveObj(Action<string> messages, double startX, double startY) : base(messages)
         {
             this.startX = startX;
             this.startY = startY;
-            x = startX;
-            y = startY;
-            moveX = startX;
-            moveY = startY;
+            X = startX;
+            Y = startY;
+            MoveX = startX;
+            MoveY = startY;
             task = null;
         }
-        public string name { get; set; }
+        public string Name { get; set; }
         protected Func<Task> task;
-        protected abstract void checkEvents();
-        public bool endMove()
+        protected abstract void CheckEvents();
+        public bool EndMove()
         {
-            return Math.Abs(x - moveX) < 5 && Math.Abs(y - moveY) < 5;
+            return Math.Abs(X - MoveX) < 5 && Math.Abs(Y - MoveY) < 5;
         }
         const int speed = 5;
-        public void move()
+        public void Move()
         {
-            if (endMove())
+            if (EndMove())
                 return;
 
-            if (Math.Abs(x - moveX)  > 2)
+            if (Math.Abs(X - MoveX)  > 2)
             {
-                y += (3*(moveY - y) / Math.Abs(x - moveX)) % speed;
-                x += (3 * Math.Sign(moveX - x)) % speed;
+                Y += (3*(MoveY - Y) / Math.Abs(X - MoveX)) % speed;
+                X += (3 * Math.Sign(MoveX - X)) % speed;
             }
             else
             {
-                x += (3 * (moveX - x) / Math.Abs(y - moveY))% speed;
-                y += (3 * Math.Sign(moveY - y)) % speed;
+                X += (3 * (MoveX - X) / Math.Abs(Y - MoveY))% speed;
+                Y += (3 * Math.Sign(MoveY - Y)) % speed;
             }
         }
 
-        public async override void start()
+        public async override void Start()
         {
-            while (!isWork)
+            while (!IsWork)
             {
-                checkEvents();
-                move();
+                CheckEvents();
+                Move();
                 if (task != null)
                     await task();
                 await Task.Delay(30);

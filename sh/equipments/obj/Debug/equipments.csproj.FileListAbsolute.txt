@@ -1,0 +1,6 @@
+F:\git\sh\sh\sh\equipments\obj\Debug\equipments.csproj.AssemblyReference.cache
+F:\git\sh\sh\sh\equipments\obj\Debug\equipments.csproj.CoreCompileInputs.cache
+F:\git\sh\sh\sh\equipments\bin\Debug\equipments.dll
+F:\git\sh\sh\sh\equipments\bin\Debug\equipments.pdb
+F:\git\sh\sh\sh\equipments\obj\Debug\equipments.dll
+F:\git\sh\sh\sh\equipments\obj\Debug\equipments.pdb

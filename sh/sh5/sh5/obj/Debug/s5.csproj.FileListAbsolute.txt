@@ -1,0 +1,12 @@
+F:\git\sh\sh\sh\sh5\sh5\obj\Debug\s5.csproj.AssemblyReference.cache
+F:\git\sh\sh\sh\sh5\sh5\obj\Debug\s5.csproj.SuggestedBindingRedirects.cache
+F:\git\sh\sh\sh\sh5\sh5\obj\Debug\sh5.Main.resources
+F:\git\sh\sh\sh\sh5\sh5\obj\Debug\sh5.Read.resources
+F:\git\sh\sh\sh\sh5\sh5\obj\Debug\sh5.Properties.Resources.resources
+F:\git\sh\sh\sh\sh5\sh5\obj\Debug\s5.csproj.GenerateResource.cache
+F:\git\sh\sh\sh\sh5\sh5\obj\Debug\s5.csproj.CoreCompileInputs.cache
+F:\git\sh\sh\sh\sh5\sh5\obj\Debug\sh5.exe
+F:\git\sh\sh\sh\sh5\sh5\obj\Debug\sh5.pdb
+F:\git\sh\sh\sh\sh5\sh5\bin\Debug\sh5.exe.config
+F:\git\sh\sh\sh\sh5\sh5\bin\Debug\sh5.exe
+F:\git\sh\sh\sh\sh5\sh5\bin\Debug\sh5.pdb

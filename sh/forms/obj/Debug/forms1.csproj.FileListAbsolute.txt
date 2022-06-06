@@ -1,0 +1,7 @@
+F:\git\sh\sh\sh\forms\obj\Debug\forms1.csproj.AssemblyReference.cache
+F:\git\sh\sh\sh\forms\obj\Debug\forms1.csproj.SuggestedBindingRedirects.cache
+F:\git\sh\sh\sh\forms\obj\Debug\forms.input.resources
+F:\git\sh\sh\sh\forms\obj\Debug\forms1.main.resources
+F:\git\sh\sh\sh\forms\obj\Debug\forms1.Properties.Resources.resources
+F:\git\sh\sh\sh\forms\obj\Debug\forms1.csproj.GenerateResource.cache
+F:\git\sh\sh\sh\forms\obj\Debug\forms1.csproj.CoreCompileInputs.cache

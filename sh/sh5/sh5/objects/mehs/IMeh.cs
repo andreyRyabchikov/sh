@@ -8,6 +8,6 @@ namespace sh5
 {
     interface IMeh
     {
-        int countRepear { get; set; }
+        int CountRepear { get; set; }
     }
 }

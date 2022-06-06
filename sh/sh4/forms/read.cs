@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace sh4
 {
 
-    public partial class read : Form
+    public partial class Read : Form
     {
         private const int CP_NOCLOSE_BUTTON = 0x200;
         protected override CreateParams CreateParams
@@ -24,22 +24,22 @@ namespace sh4
             }
         }
         public string number;
-        public read(string message)
+        public Read(string message)
         {
             InitializeComponent();
             label1.Text = message;
         }
 
-        private void add_truck_Load(object sender, EventArgs e)
+        private void Read_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void Label4_Click(object sender, EventArgs e)
         {
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
 
             number = textBox2.Text;

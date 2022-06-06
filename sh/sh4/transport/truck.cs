@@ -7,32 +7,32 @@ using System.Windows.Forms;
 
 namespace sh4
 {
-    public class truck : car
+    public class Truck : Car
     {
-        public int loadCapacity { get; set; }
-        public int countWheels { get; set; }
-        public int weight { get; set; }
-        public int emptyWeight { get; set; }
-        public truck()
+        public int LoadCapacity { get; set; }
+        public int CountWheels { get; set; }
+        public int Weight { get; set; }
+        public int EmptyWeight { get; set; }
+        public Truck()
         {
-            loadCapacity = 0;
-            countWheels = 4;
-            weight = 2000;
-            emptyWeight = 2000;
+            LoadCapacity = 0;
+            CountWheels = 4;
+            Weight = 2000;
+            EmptyWeight = 2000;
         }
-        public void load(int kg)
+        public void Load(int kg)
         {
-            if (kg + weight > loadCapacity)
+            if (kg + Weight > LoadCapacity)
                 MessageBox.Show("Перегруз!");
             else
-                weight += kg;
+                Weight += kg;
         }
-        public void unload(int kg)
+        public void Unload(int kg)
         {
-            if (weight - kg < emptyWeight)
+            if (Weight - kg < EmptyWeight)
                 MessageBox.Show("Столько груза нет.");
             else
-                weight -= kg;
+                Weight -= kg;
         }
     }
 }

@@ -7,13 +7,13 @@ using System.Windows.Forms;
 
 namespace sh4
 {
-    interface transportVehicle
+    interface ITransportVehicle
     {
-        int mileage { get; set; }
-        int passenger { get; set; }
-        int maxPassenger { get; }
-        void move(int km);
-        void loadPassengers(int passengers);
+        int Mileage { get; set; }
+        int Passenger { get; set; }
+        int MaxPassenger { get; }
+        void Move(int km);
+        void LoadPassengers(int passengers);
 
     }
 }

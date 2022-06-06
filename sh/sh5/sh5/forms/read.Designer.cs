@@ -1,7 +1,7 @@
 ﻿
 namespace sh5
 {
-    partial class read
+    partial class Read
     {
         /// <summary>
         /// Required designer variable.
